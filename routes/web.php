@@ -26,7 +26,15 @@ Route::get('/welcome3', fn()=> view('login.welcome.welcome3'))->name('welcome3.i
 Route::get('/user/login', fn()=> view('login.login'))->name('user.login.index');
 Route::get('/user/register', fn()=> view('login.register'))->name('user.register.index');
 
-// Home
-Route::get('/user/home', fn()=> view('users.home.index'))->name('users.home.index');
+// Home = petshop
+Route::get('/user/home', fn()=> view('users.home.food.index'))->name('users.food.index');
+Route::get('/user/drug', fn()=> view('users.home.drug.index'))->name('users.drug.index');
+Route::get('/user/accessories', fn()=> view('users.home.accessories.index'))->name('users.accessories.index');
+
+
+
+Route::get('/user/grooming', fn()=> view('users.grooming.index'))->name('users.grooming.index');
+
+
 
 

@@ -1,95 +1,19 @@
 @extends('layouts.main')
 
 @push('style')
-    <link rel="stylesheet" href="{{ asset('/css/home.css') }}">
+  <link rel="stylesheet" href="{{ asset('/css/home.css') }}">
 @endpush
 
 @section('body')
   @include('components.navbar')
   <section id="home">
     <div class="container">
-      <div class="row py-3">
-        <div class="col-10 pe-0">
-          <form class="d-flex" role="search">
-            <button class="btn position-absolute" type="submit"><i class="bi bi-search"></i></button>
-            <input class="form-control me-2 ps-5 rounded-3" type="search" placeholder="Search" />
-          </form>
-        </div>
-        <div class="col-2 text-start">
-          <button data-bs-toggle="modal" data-bs-target="#exampleModal" style="border: none">
-            <i class="bi bi-cart fs-3"></i>
-          </button>
-        </div>
-      </div>
-      <div class="row shadow-sm mx-4 rounded-3 mb-3">
-        <div class="col-6 text-center px-0">
-          <a href="petshop.html">
-            <div class="rounded-3 bg-orange h-100 w-100 py-3">
-              <img src="/images/icon.png" alt="icon" height="30px" />
-              <span class="fw-bold">Petshop</span>
-            </div>
-          </a>
-        </div>
-        <div class="col-6 text-center px-0">
-          <a href="grooming.html">
-            <div class="rounded-3 h-100 w-100 pt-3">
-              <img src="/images/icon2.png" alt="icon" height="30px" />
-              <span class="fw-bold">Grooming</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
-                aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
-                aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="4000">
-                <img src="/images/slide1.png" class="d-block w-100" alt="img" height="200px" />
-              </div>
-              <div class="carousel-item" data-bs-interval="4000">
-                <img src="/images/slide2.png" class="d-block w-100" alt="img" height="200px" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row text-center font-txt text-white" style="font-size: 13px">
-        <div class="col-4 my-3 px-1">
-          <a href="">
-            <div class="bg-white shadow-sm py-2 rounded-3">
-              <img src="/images/pet-obat.png" alt="img" height="25px" />
-              <span class="txt-abu">Obat</span>
-            </div>
-          </a>
-        </div>
-        <div class="col-4 my-3 px-1">
-          <a href="">
-            <div class="bg-white shadow-sm py-2 rounded-3">
-              <img src="/images/pet-food.png" alt="img" height="25px" />
-              <span class="txt-abu">Makanan</span>
-            </div>
-          </a>
-        </div>
-        <div class="col-4 my-3 px-1">
-          <a href="">
-            <div class="bg-white shadow-sm py-2 rounded-3">
-              <img src="/images/pet-collar.png" alt="img" height="25px" />
-              <span class="txt-abu">Aksesoris</span>
-            </div>
-          </a>
-        </div>
-      </div>
+      @include('components.nav_drug')
       <div class="row">
         <div class="col-md-3 col-6 p-0">
           <div class="m-1 shadow-sm rounded-3">
             <div class="text-center">
-              <img src="/images/produk1.png" alt="img" height="200px" width="100%" />
+              <img src="{{ asset('/images/product_drug.png') }}" alt="img" height="200px" width="100%" />
             </div>
             <div class="py-3 px-2">
               <h5 class="txt-merah">Whiskas 80gr</h5>
@@ -104,7 +28,7 @@
         <div class="col-md-3 col-6 p-0">
           <div class="m-1 shadow-sm rounded-3">
             <div class="text-center">
-              <img src="/images/produk2.png" alt="img" height="200px" width="100%" />
+              <img src="{{ asset('/images/produk2.png') }}" alt="img" height="200px" width="100%" />
             </div>
             <div class="py-3 px-2">
               <h5 class="txt-merah">Whiskas 80gr</h5>
@@ -143,7 +67,7 @@
                 <div class="row border py-3 my-1">
                   <div class="col-4">
                     <div>
-                      <img src="/images/produk1.png" alt="img" height="80px" width="100%" />
+                      <img src="{{ asset('/images/product_drug.png') }}" alt="img" height="80px" width="100%" />
                     </div>
                   </div>
                   <div class="col-8">
