@@ -60,21 +60,23 @@
         </div>
       </div>
       <div class="row mt-4">
-        <div class="col-md-3 col-6 p-0">
-          <div class="m-1 shadow-sm rounded-3">
-            <div class="text-center">
-              <img src="/images/produk3.png" alt="img" height="200px" width="100%" />
-            </div>
-            <div class="py-3 px-2">
-              <h5 class="txt-merah">Kucing Persia</h5>
-              <p class="m-0"><del>Rp. 50.000</del></p>
-              <p class="m-0 fw-bold fs-5">Rp. 35.000,-</p>
-              <div class="text-end">
-                <p class="bg-orange d-inline px-2 py-1 rounded-4 fw-bold">10%</p>
+        <a href="{{ route('users.etalase_grooming.index') }}">
+          <div class="col-md-3 col-6 p-0">
+            <div class="m-1 shadow-sm rounded-3">
+              <div class="text-center">
+                <img src="{{ asset('/images/product3.png') }}" alt="img" height="200px" width="100%" />
+              </div>
+              <div class="py-3 px-2">
+                <h5 class="txt-merah">Kucing Persia</h5>
+                <p class="m-0"><del>Rp. 50.000</del></p>
+                <p class="m-0 fw-bold fs-5">Rp. 35.000,-</p>
+                <div class="text-end">
+                  <p class="bg-orange d-inline px-2 py-1 rounded-4 fw-bold">10%</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
       <div>
         <div class="row" style="margin-top: 94px">
