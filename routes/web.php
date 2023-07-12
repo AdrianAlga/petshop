@@ -34,10 +34,12 @@ Route::get('/user/accessories', fn()=> view('users.home.accessories.index'))->na
 // Grooming
 Route::get('/user/grooming', fn()=> view('users.grooming.index'))->name('users.grooming.index');
 
+//inbox
+Route::get('/user/inbox', fn()=> view('users.inbox.index'))->name('users.inbox.index');
+
 // Booking
 Route::get('/user/booking', fn()=> view('users.booking.live.index'))->name('users.booking.index');
 Route::get('/user/history_booking', fn()=> view('users.booking.history.index'))->name('users.history_booking.index');
-
 
 // profile
 Route::get('/user/profile', fn()=> view('users.profile.index'))->name('users.profile.index');

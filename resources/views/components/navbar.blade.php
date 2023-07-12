@@ -14,7 +14,7 @@
         </a>
       </div>
       <div class="col-3">
-        <a href="">
+        <a href="{{ route('users.inbox.index') }}">
           <i class="bi bi-inbox fs-2"></i>
           <p>Inbox</p>
         </a>

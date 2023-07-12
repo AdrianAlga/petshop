@@ -14,7 +14,7 @@
               <div>
                 <h1 class="text-white font-header ps-5 pb-4 font-size">Masuk</h1>
                 <div class="form-container shadow-sm">
-                  <form class="form">
+                  <form class="">
                     <div class="input-group">
                       <label for="username" class="txt-orange">Email</label>
                       <input type="email" name="username" id="username" required />
@@ -31,8 +31,10 @@
                     <div class="py-2 text-end" style="font-size: 12px;">
                       <a href="">Lupa Password?</a>
                     </div>
-                    <button class="sign text-white bg-orange">Masuk</button>
                   </form>
+                  <a href="{{ route('users.food.index') }}">
+                    <button class="sign text-white bg-orange px-5">Masuk</button>
+                  </a>
                   <p class="signup text-dark pt-4">
                     Belum punya akun?
                     <a rel="noopener noreferrer" href="{{ route('user.register.index') }}" class="txt-orange">Registrasi</a>
