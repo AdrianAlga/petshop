@@ -35,8 +35,14 @@
       </div>
     </div>
     <div class="row border shadow-sm mb-3 py-4">
-      <div class="col-4">
-        <p>Alamat Pengirim</p>
+      <div class="col-12">
+        <p><i class="bi bi-geo-alt-fill"></i> Alamat Pengirim</p>
+      </div>
+      <div class="col-12 small ps-4">
+        Ananda Nur Amalia | (+62) 812-4328-1779 <br />
+        Jl. Batua raya no. 17 <br />
+        PANAKKUKANG, KOTA MAKASSAR, SULAWESI SELATAN, <br />
+        ID 90231
       </div>
     </div>
     <div class="row border shadow-sm mb-3 py-3">

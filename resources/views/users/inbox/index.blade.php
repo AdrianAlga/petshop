@@ -9,9 +9,6 @@
           <div class="container">
             <div class="row">
               <div class="col-2">
-                <a href="">
-                  <h2><i class="bi bi-arrow-left text-dark"></i></h2>
-                </a>
               </div>
               <div class="col-8 text-center">
                 <h4 class="font-txt fw-bold ms-3 py-1">Chat</h4>
